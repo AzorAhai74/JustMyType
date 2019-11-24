@@ -13,10 +13,17 @@ $(document).ready(function() {
     }
     });
 
-let keys = ['126']
+    $(document).on('keypress', function () {
 
-    $(document).keydown(function (e) {
-    if (e.keycode)
-    })
-
+        let keyClicked = event.which;
+        $(`#${event.which}`).css('background', 'yellow');
+    
+        $(document).on('keyup', function () {
+    
+        $(`#${keyClicked}`).css('background', '');
+    
+        });
+    
+    });
+    
 });
