@@ -15,15 +15,22 @@ $(document).ready(function() {
 
     $(document).on('keypress', function () {
 
-        let keyClicked = event.which;
+        let clickedKeys = event.which;
         $(`#${event.which}`).css('background', 'yellow');
     
         $(document).on('keyup', function () {
     
-        $(`#${keyClicked}`).css('background', '');
+        $(`#${clickedKeys}`).css('background', '');
     
         });
     
     });
+
+    let sentences = ['ten ate neite ate nee enet ite ate inet ent eate', 'Too ato too nOt enot one totA not anot tOO aNot', 'oat itain oat tain nate eate tea anne inant nean', 'itant eate anot eat nato inate eat anot tain eat', 'nee ene ate ite tent tiet ent ine ene ete ene ate'];
     
+    function addSentence() {
+        $('#sentence').text(sentences[0]);
+    };
+
+    addSentence();
 });
