@@ -104,7 +104,7 @@ $(document).ready(function() {
 
             if (event.which === sentences[i][x].charCodeAt()) {
                 $('#yellow-block').css('margin-left', `${blockMove}px`);
-                blockMove += 17.5;
+                blockMove += 17;
                 x++;
                 $('#feedback').append('<div class"correct">/<div>');
                 $('.correct').css('color', 'blue');
