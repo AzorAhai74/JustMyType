@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "/Users/byronbaldwin/Desktop/SourceCode/99LinesofCodePart2"
+		},
+		{
+			"path": "/Users/byronbaldwin/Desktop/SourceCode/99LinesofCode"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "/Users/byronbaldwin/Desktop/SourceCode/JQueryDrills"
+		},
+		{
+			"path": "/Users/byronbaldwin/Desktop/SourceCode/manipulatingHTML/DOM"
+		},
+		{
+			"path": "/Users/byronbaldwin/Desktop/SourceCode/manipulatingHTML"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

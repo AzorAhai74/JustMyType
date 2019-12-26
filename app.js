@@ -77,13 +77,24 @@ $(document).ready(function() {
                 'text-decoration': 'underline'
             });
 
-            $('#32').after('<div class="tryAgain">Try Again?</div>');
+            $('.finalCount').after('<div class="tryAgain">Try Again?</div>');
             $('.tryAgain').css('font-size', "30px");
             $('.tryAgain').after('<button class="secondTime">Yes!</button>');
             $('.secondTime').after('<button class="giveUp">I Suck at Typing</button>');
             $('button').css({
-                'margin': '10px',
-                'padding': '10px'
+                'box-shadow': '0px 0px 0px 2px #9fb4f2',
+	            'background': 'linear-gradient(to bottom, #7892c2 5%, #476e9e 100%)',
+	            'background-color': '#7892c2',
+	            'border-radius': '10px',
+	            'border': '1px solid #4e6096',
+	            'display': 'inline-block',
+	            'cursor': 'pointer',
+	            'color': '#ffffff',
+	            'font-family': 'Arial',
+	            'font-size': '19px',
+	            'padding': '12px 37px',
+	            'text-decoration': 'none',
+	            'text-shadow': '0px 1px 0px #283966'
             });
 
             $('.secondTime').on('click', function () {
@@ -127,6 +138,12 @@ $(document).ready(function() {
                 };
             } else {
                 $('#feedback').append('<div class="incorrect">X</div>');
+                let $wrongKey = $('.container');
+                let wrongKeyColor = $wrongKey.css('background-color');
+                $wrongKey.css('background-color', 'red');
+                setTimeout(function() {
+                    $wrongKey.css('background-color', wrongKeyColor);
+                }, 100);
                 $('.incorrect').css('color', 'red');
                 mistakes++;
             };
